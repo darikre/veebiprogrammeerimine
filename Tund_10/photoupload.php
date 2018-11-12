@@ -92,15 +92,11 @@
 			     $saveResult = $myPhoto->savePhoto($target_file);
 				 //kui salvestus õnnestus, lisame andmebaasi
 				 if($saveResult == 1){
-					 addPhotoData($target_file_name, $);
+					 addPhotoData($target_file_name, $_POST["altText"], $_POST["privacy"]);
 				 }
 				 unset($myPhoto);
 				 
 				 
-		
-					 
-				 imagedestroy($myTempImage);
-				 imagedestroy($myImage);
 				 
 /* 				if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 					echo "Fail ". basename( $_FILES["fileToUpload"]["name"]). " on üles laetud!";
