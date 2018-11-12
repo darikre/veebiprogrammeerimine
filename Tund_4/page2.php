@@ -6,15 +6,13 @@
   
   //var_dump($_POST);
   if (isset($_POST["firstName"])){
-	$name=$_POST["firstName"];
+	  $name=$_POST["firstName"];
   }
-	if (isset($_POST["SurName"])){
-	$surname=$_POST["SurName"];    
+  if (isset($_POST["surName"])){
+	  $surname=$_POST["surName"];    
   }
  
- if (isset($_POST["birthMonth"])){
-	$name=$_POST["birthMonth"];
-  }
+
  
 ?>
 
@@ -27,7 +25,7 @@
   <?php
   echo $name;
   echo " ";
-  echo$surname;
+  echo $surname;
   ?>
   , õppetöö</title>
 </head>
@@ -45,7 +43,7 @@
   <label>Eesnimi:</label>
   <input name="firstName" type="text" value="">
   <label>Perekonnanimi:</label>
-  <input name="SurName" type="text" value="">
+  <input name="surName" type="text" value="">
   <label>Sünniaasta</label>
   <input name="birthYear" type="number" min="1924" max="2003" value="1998"
   
